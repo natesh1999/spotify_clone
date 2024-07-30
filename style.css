@@ -4,3 +4,7 @@ body {
   font-weight: weight;
   font-style: normal;
 }
+
+body {
+  height: 100%;
+}
