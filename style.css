@@ -3,8 +3,69 @@ body {
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
+  margin: 0;
+  background-color: #000;
+  color: #fff;
+  overflow: hidden;
 }
 
-body {
-  height: 100%;
+.main{
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar{
+  background-color: #000;
+  width: 300px;
+  border-radius: 1rem; /* 16px*/
+  
+}
+
+.main-content{
+  background-color: #121212;
+  flex: 1;
+  border-radius: 1rem;
+  overflow: auto;
+}
+
+.music-player{
+  background-color: yellow;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 72px;
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav{
+  background-color: #121212;
+  display: flex;
+  border-radius: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  height: 100px;
+  padding: 0.5rem 0.75rem;
+}
+
+.nav-option{
+  line-height: 2.5rem;
+  opacity: 0.5;
+  padding: 0.2rem;
+}
+
+.nav-option:hover{
+  opacity: 1;
+}
+
+.nav-option i {
+  margin-right: 1rem;
+}
+
+.nav-option a {
+  font-size: 1rem;
+  margin-left: 1rem;
 }
